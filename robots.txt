@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shnikguides.com/sitemap.xml
+Sitemap: https://zhaokun0123.github.io/shnik-guide/sitemap.xml
