@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Shnik Guides - Complete Walkthroughs, Tips & Level Solutions | Shnik Guides</title>
+    <meta name="description" content="Browse all Shnik guides: complete walkthroughs for all 75+ levels, rail rotation mechanics, beginner tips, hard puzzle solutions, and achievement guides. Filter by category and difficulty.">
+    <meta name="keywords" content="Shnik all guides, Shnik walkthrough list, Shnik level solutions, Shnik puzzle guide, Shnik tips, Shnik mechanics">
+    <meta name="author" content="Shnik Guides">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shnikguides.com/guides.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="All Shnik Guides - Walkthroughs, Tips & Level Solutions">
+    <meta property="og:description" content="Complete walkthroughs, mechanics, tips, and all 75+ level solutions for Shnik. Filter by category and difficulty.">
+    <meta property="og:url" content="https://shnikguides.com/guides.html">
+    <meta property="og:image" content="https://aka.doubaocdn.com/s/GRPzUK8nVx">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="All Shnik Guides - Walkthroughs & Solutions">
+    <meta name="twitter:description" content="Complete walkthroughs, mechanics, tips, and all 75+ level solutions for Shnik.">
+    <meta name="twitter:image" content="https://aka.doubaocdn.com/s/GRPzUK8nVx">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "All Shnik Guides",
+        "description": "Complete collection of Shnik walkthroughs, tips, mechanics guides, and level solutions.",
+        "url": "https://shnikguides.com/guides.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Shnik Guides",
+            "url": "https://shnikguides.com/"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://shnikguides.com/"},
+            {"@type": "ListItem", "position": 2, "name": "All Guides", "item": "https://shnikguides.com/guides.html"}
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { red: '#E85D5D', coral: '#F07878', purple: '#8B6FD6', blue: '#5BA3D9', green: '#5FBF8E', yellow: '#E8C84A', pink: '#E89BB5', teal: '#4DB8B0' },
+                        ink: { 900: '#1F1F2E', 700: '#3A3A4E', 500: '#6B6B80', 300: '#B0B0C0' },
+                        paper: '#F8F7F4', card: '#FFFFFF',
+                    },
+                    fontFamily: { display: ['Nunito', 'system-ui', 'sans-serif'], body: ['Inter', 'system-ui', 'sans-serif'] },
+                    boxShadow: { soft: '0 4px 20px rgba(31, 31, 46, 0.06)', hover: '0 8px 30px rgba(31, 31, 46, 0.12)' },
+                    borderRadius: { '2xl': '1rem', '3xl': '1.5rem' }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Inter', system-ui, sans-serif; background: #F8F7F4; color: #1F1F2E; }
+        .font-display { font-family: 'Nunito', system-ui, sans-serif; }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(31,31,46,0.12); }
+        .filter-chip { transition: all 0.2s ease; cursor: pointer; }
+        .filter-chip.active { background: #E85D5D; color: white; border-color: #E85D5D; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #E85D5D; transition: width 0.3s ease; }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .editor-badge { background: linear-gradient(135deg, #8B6FD6, #A78BE8); }
+        .new-badge { background: linear-gradient(135deg, #5FBF8E, #7DD6A8); }
+        .guide-card.hidden { display: none; }
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <!-- ===== Header ===== -->
+    <header class="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-ink-300/20 shadow-soft">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-red to-brand-coral flex items-center justify-center shadow-soft group-hover:scale-110 transition-transform">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>
+                    </div>
+                    <span class="font-display font-extrabold text-xl text-ink-900 tracking-tight">Shnik<span class="text-brand-red">Guides</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link font-display font-semibold text-ink-700 hover:text-brand-red transition-colors">Home</a>
+                    <a href="guides.html" class="nav-link active font-display font-semibold text-ink-900 hover:text-brand-red transition-colors">All Guides</a>
+                    <a href="guides.html?category=beginner" class="nav-link font-display font-semibold text-ink-700 hover:text-brand-red transition-colors">Beginner</a>
+                    <a href="guides.html?category=advanced" class="nav-link font-display font-semibold text-ink-700 hover:text-brand-red transition-colors">Advanced</a>
+                    <a href="about.html" class="nav-link font-display font-semibold text-ink-700 hover:text-brand-red transition-colors">About</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-paper transition-colors" aria-label="Open menu">
+                    <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden pb-4 border-t border-ink-300/10 pt-3">
+                <div class="flex flex-col gap-2">
+                    <a href="index.html" class="px-3 py-2 rounded-lg font-display font-semibold text-ink-700 hover:bg-paper">Home</a>
+                    <a href="guides.html" class="px-3 py-2 rounded-lg font-display font-semibold text-ink-900 bg-paper">All Guides</a>
+                    <a href="guides.html?category=beginner" class="px-3 py-2 rounded-lg font-display font-semibold text-ink-700 hover:bg-paper">Beginner</a>
+                    <a href="guides.html?category=advanced" class="px-3 py-2 rounded-lg font-display font-semibold text-ink-700 hover:bg-paper">Advanced</a>
+                    <a href="about.html" class="px-3 py-2 rounded-lg font-display font-semibold text-ink-700 hover:bg-paper">About</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== Page Header ===== -->
+        <section class="bg-gradient-to-br from-ink-900 via-ink-900 to-brand-purple/30 py-14">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <nav aria-label="Breadcrumb" class="mb-4">
+                    <ol class="flex items-center gap-2 text-sm text-white/50">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+                        <li class="text-white">All Guides</li>
+                    </ol>
+                </nav>
+                <h1 class="font-display font-black text-4xl md:text-5xl text-white mb-3">All Shnik Guides</h1>
+                <p class="text-white/60 text-lg max-w-2xl">Complete walkthroughs, mechanics deep dives, and expert tips for every level in Shnik. Filter by category to find exactly what you need.</p>
+            </div>
+        </section>
+
+        <!-- ===== Search & Filter Bar ===== -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="bg-card rounded-3xl shadow-soft border border-ink-300/10 p-6">
+                <div class="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-between mb-6">
+                    <div class="relative w-full lg:w-96">
+                        <input type="text" id="guideSearch" placeholder="Search guides by title or keyword..." class="w-full pl-11 pr-4 py-3 rounded-xl bg-paper border border-ink-300/30 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red/40 focus:border-brand-red/50 transition-all" aria-label="Search guides">
+                        <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-ink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    </div>
+                    <div class="flex items-center gap-3 w-full lg:w-auto">
+                        <label for="sortSelect" class="text-sm font-display font-semibold text-ink-700 whitespace-nowrap">Sort by:</label>
+                        <select id="sortSelect" class="flex-1 lg:flex-none px-4 py-3 rounded-xl bg-paper border border-ink-300/30 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-red/40 cursor-pointer" aria-label="Sort guides">
+                            <option value="newest">Newest First</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="alphabetical">Alphabetical (A-Z)</option>
+                            <option value="duration">Shortest Read</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2" id="categoryFilters" role="group" aria-label="Filter by category">
+                    <button class="filter-chip active px-4 py-2 rounded-full border border-ink-300/30 text-sm font-display font-semibold text-ink-700 hover:border-brand-red/50" data-category="all">All Guides</button>
+                    <button class="filter-chip px-4 py-2 rounded-full border border-ink-300/30 text-sm font-display font-semibold text-ink-700 hover:border-brand-red/50" data-category="beginner">Beginner</button>
+                    <button class="filter-chip px-4 py-2 rounded-full border border-ink-300/30 text-sm font-display font-semibold text-ink-700 hover:border-brand-red/50" data-category="mechanics">Mechanics</button>
+                    <button class="filter-chip px-4 py-2 rounded-full border border-ink-300/30 text-sm font-display font-semibold text-ink-700 hover:border-brand-red/50" data-category="walkthrough">Walkthrough</button>
+                    <button class="filter-chip px-4 py-2 rounded-full border border-ink-300/30 text-sm font-display font-semibold text-ink-700 hover:border-brand-red/50" data-category="advanced">Advanced</button>
+                    <button class="filter-chip px-4 py-2 rounded-full border border-ink-300/30 text-sm font-display font-semibold text-ink-700 hover:border-brand-red/50" data-category="tips">Tips & Tricks</button>
+                    <button class="filter-chip px-4 py-2 rounded-full border border-ink-300/30 text-sm font-display font-semibold text-ink-700 hover:border-brand-red/50" data-category="achievements">Achievements</button>
+                </div>
+                <p id="resultCount" class="mt-4 text-sm text-ink-500">Showing <span class="font-bold text-ink-900">8</span> guides</p>
+            </div>
+        </section>
+
+        <!-- ===== Editor's Picks Row ===== -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex items-center gap-2 mb-5">
+                <span class="editor-badge px-3 py-1 rounded-full text-white text-xs font-display font-bold">EDITOR'S PICKS</span>
+                <h2 class="font-display font-extrabold text-2xl text-ink-900">Top Recommended</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-5">
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="beginner" data-title="Shnik Complete Beginner's Guide How to Play Master the Basics" data-views="2400" data-duration="8" data-date="2026-08-29">
+                    <a href="guide-detail.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/3cnmoaQqWx" alt="Shnik complete beginner guide cover with pink and purple geometric puzzle shapes" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute top-3 left-3 editor-badge px-2.5 py-0.5 rounded-full text-white text-xs font-display font-bold">Editor's Pick</div>
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Beginner</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">Shnik Complete Beginner's Guide: How to Play & Master the Basics</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">Learn the core mechanics of sliding, clicking, and rotating rails. Everything you need to solve your first 25 levels.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>8 min read</span>
+                                <span>2.4k views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="mechanics" data-title="Rail Rotation Shape Sorting Advanced Mechanics Explained" data-views="1500" data-duration="12" data-date="2026-08-29">
+                    <a href="guides.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/0kUFIDppk6" alt="Shnik rail rotation mechanics guide cover with purple maze and red ring" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute top-3 left-3 editor-badge px-2.5 py-0.5 rounded-full text-white text-xs font-display font-bold">Editor's Pick</div>
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Mechanics</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">Rail Rotation & Shape Sorting: Advanced Mechanics Explained</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">Deep dive into the game's most complex systems. Understand how rotating rails and locked pieces create devious puzzles.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>12 min read</span>
+                                <span>1.5k views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="advanced" data-title="Hard Levels Guide Conquer Levels 50-75 Without Breaking a Sweat" data-views="980" data-duration="15" data-date="2026-08-29">
+                    <a href="guides.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/DgpNUlPvvX" alt="Shnik hard levels guide cover with yellow and orange puzzle shapes" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute top-3 left-3 editor-badge px-2.5 py-0.5 rounded-full text-white text-xs font-display font-bold">Editor's Pick</div>
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Advanced</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">Hard Levels Guide: Conquer Levels 50-75 Without Breaking a Sweat</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">The final 25 levels are brutal. Step-by-step solutions, alternative paths, and the key insight for each puzzle.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>15 min read</span>
+                                <span>980 views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== All Guides Grid ===== -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-16">
+            <h2 class="font-display font-extrabold text-2xl text-ink-900 mb-6">All Guides</h2>
+            <div id="guidesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="walkthrough" data-title="Levels 1-25 Walkthrough Every Early Puzzle Solved" data-views="1800" data-duration="10" data-date="2026-08-29">
+                    <a href="guides.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/AV5lb5roef" alt="Shnik levels 1-25 walkthrough cover with blue and green puzzle shapes" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Walkthrough</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">Levels 1-25 Walkthrough: Every Early Puzzle Solved</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">Complete solutions for the first third of the game. Learn the fundamentals while progressing through gently escalating challenges.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>10 min read</span>
+                                <span>1.8k views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="walkthrough" data-title="Intermediate Challenge Levels 26-50 Complete Guide" data-views="760" data-duration="12" data-date="2026-08-29">
+                    <a href="guides.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/0kUFIDppk6" alt="Shnik levels 26-50 intermediate guide cover with purple maze" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Walkthrough</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">Intermediate Challenge: Levels 26-50 Complete Guide</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">The middle section introduces rail rotation and locked pieces. We break down every puzzle with clear, numbered steps.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>12 min read</span>
+                                <span>760 views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="tips" data-title="10 Pro Tips Tricks for Shnik Puzzle Masters" data-views="1100" data-duration="6" data-date="2026-08-29">
+                    <a href="guides.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/tULQ3Opso7" alt="Shnik tips and tricks cover with rainbow colored geometric puzzle shapes" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Tips & Tricks</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">10 Pro Tips & Tricks for Shnik Puzzle Masters</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">From planning your moves in advance to spotting shortcut patterns, these strategies will shave minutes off every puzzle.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>6 min read</span>
+                                <span>1.1k views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="achievements" data-title="Achievement Guide How to Unlock Everything in Shnik" data-views="540" data-duration="8" data-date="2026-08-29">
+                    <a href="guides.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/0NGanU3JPI" alt="Shnik achievement guide cover with teal and coral puzzle pieces" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Achievements</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">Achievement Guide: How to Unlock Everything in Shnik</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">Complete 100% of Shnik's achievements. We list every unlock condition, the fastest path to each, and potential missables.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>8 min read</span>
+                                <span>540 views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="beginner" data-title="Shnik Controls Input Guide Mouse Touch Keyboard Explained" data-views="890" data-duration="5" data-date="2026-08-29">
+                    <a href="guides.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/3cnmoaQqWx" alt="Shnik controls and input guide cover with pink puzzle shapes" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Beginner</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">Shnik Controls & Input Guide: Mouse, Touch & Keyboard Explained</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">Master every input method. Learn how to slide, click, and rotate with precision using mouse, touchscreen, or keyboard controls.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>5 min read</span>
+                                <span>890 views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="guide-card card-hover bg-card rounded-2xl overflow-hidden shadow-soft border border-ink-300/10" data-category="mechanics" data-title="Understanding Bead Mazes How Shnik Puzzles Are Built" data-views="620" data-duration="9" data-date="2026-08-29">
+                    <a href="guides.html" class="block">
+                        <div class="relative h-40 overflow-hidden">
+                            <img src="https://aka.doubaocdn.com/s/AV5lb5roef" alt="Shnik bead maze mechanics guide cover with blue rail network" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute bottom-3 left-3 bg-ink-900/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-white text-xs font-medium">Mechanics</div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-ink-900 mb-2 leading-snug">Understanding Bead Mazes: How Shnik Puzzles Are Built</h3>
+                            <p class="text-ink-500 text-sm leading-relaxed mb-3">Learn the architecture behind every Shnik level. Understanding rail networks, bead paths, and goal placement makes solving intuitive.</p>
+                            <div class="flex items-center justify-between text-xs text-ink-500">
+                                <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>9 min read</span>
+                                <span>620 views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+            <div id="noResults" class="hidden text-center py-16">
+                <svg class="w-16 h-16 mx-auto text-ink-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <h3 class="font-display font-bold text-xl text-ink-700 mb-2">No guides found</h3>
+                <p class="text-ink-500">Try a different search term or category filter.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-ink-900 text-white/70 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-4">
+                        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-red to-brand-coral flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>
+                        </div>
+                        <span class="font-display font-extrabold text-xl text-white">Shnik<span class="text-brand-red">Guides</span></span>
+                    </a>
+                    <p class="text-sm leading-relaxed mb-4">Your complete resource for Shnik puzzle solutions, walkthroughs, and tips. Built by puzzle fans, for puzzle fans.</p>
+                </div>
+                <div>
+                    <h3 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Guides</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="guide-detail.html" class="hover:text-brand-red transition-colors">Beginner's Guide</a></li>
+                        <li><a href="guides.html?category=walkthrough" class="hover:text-brand-red transition-colors">Full Walkthrough</a></li>
+                        <li><a href="guides.html?category=mechanics" class="hover:text-brand-red transition-colors">Mechanics Explained</a></li>
+                        <li><a href="guides.html?category=advanced" class="hover:text-brand-red transition-colors">Hard Level Solutions</a></li>
+                        <li><a href="guides.html?category=tips" class="hover:text-brand-red transition-colors">Tips & Tricks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Game Info</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="about.html" class="hover:text-brand-red transition-colors">About Shnik</a></li>
+                        <li><a href="about.html#team" class="hover:text-brand-red transition-colors">Developer Team</a></li>
+                        <li><a href="about.html#specs" class="hover:text-brand-red transition-colors">System Requirements</a></li>
+                        <li><a href="https://store.steampowered.com/app/4260500/Shnik/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-red transition-colors">Buy on Steam</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Legal</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="index.html#disclaimer" class="hover:text-brand-red transition-colors">Disclaimer</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-red transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-brand-red transition-colors">Terms of Use</a></li>
+                    </ul>
+                    <div class="mt-6 p-4 rounded-xl bg-white/5 border border-white/10">
+                        <p class="text-xs leading-relaxed"><strong class="text-white">Disclaimer:</strong> ShnikGuides.com is an unofficial fan-made guide website. Not affiliated with Little Crown Games.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="text-sm">&copy; 2026 ShnikGuides.com. All rights reserved. Unofficial fan site.</p>
+                    <div class="flex items-center gap-6 text-sm">
+                        <a href="privacy.html" class="hover:text-brand-red transition-colors">Privacy</a>
+                        <a href="terms.html" class="hover:text-brand-red transition-colors">Terms</a>
+                        <a href="index.html#disclaimer" class="hover:text-brand-red transition-colors">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Guide filtering, sorting, and search
+        const guideCards = document.querySelectorAll('.guide-card');
+        const filterChips = document.querySelectorAll('.filter-chip');
+        const searchInput = document.getElementById('guideSearch');
+        const sortSelect = document.getElementById('sortSelect');
+        const resultCount = document.getElementById('resultCount');
+        const noResults = document.getElementById('noResults');
+        const guidesGrid = document.getElementById('guidesGrid');
+
+        let activeCategory = 'all';
+        let searchQuery = '';
+        let sortBy = 'newest';
+
+        function applyFilters() {
+            let visibleCount = 0;
+            const visibleCards = [];
+
+            guideCards.forEach(card => {
+                const category = card.dataset.category;
+                const title = card.dataset.title.toLowerCase();
+                const matchesCategory = activeCategory === 'all' || category === activeCategory;
+                const matchesSearch = !searchQuery || title.includes(searchQuery);
+                const isVisible = matchesCategory && matchesSearch;
+
+                if (isVisible) {
+                    card.classList.remove('hidden');
+                    card.classList.add('fade-in');
+                    visibleCount++;
+                    visibleCards.push(card);
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Sort visible cards
+            visibleCards.sort((a, b) => {
+                switch (sortBy) {
+                    case 'popular': return parseInt(b.dataset.views) - parseInt(a.dataset.views);
+                    case 'alphabetical': return a.dataset.title.localeCompare(b.dataset.title);
+                    case 'duration': return parseInt(a.dataset.duration) - parseInt(b.dataset.duration);
+                    case 'newest':
+                    default: return new Date(b.dataset.date) - new Date(a.dataset.date);
+                }
+            });
+
+            // Re-append in sorted order (only for cards in the main grid)
+            visibleCards.forEach(card => {
+                if (card.closest('#guidesGrid')) {
+                    guidesGrid.appendChild(card);
+                }
+            });
+
+            resultCount.innerHTML = 'Showing <span class="font-bold text-ink-900">' + visibleCount + '</span> guides';
+            noResults.classList.toggle('hidden', visibleCount > 0);
+        }
+
+        filterChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                filterChips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                activeCategory = chip.dataset.category;
+                applyFilters();
+            });
+        });
+
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.trim().toLowerCase();
+            applyFilters();
+        });
+
+        sortSelect.addEventListener('change', (e) => {
+            sortBy = e.target.value;
+            applyFilters();
+        });
+
+        // Check URL params for pre-filtering
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryParam = urlParams.get('category');
+        const qParam = urlParams.get('q');
+
+        if (categoryParam) {
+            const matchingChip = document.querySelector('.filter-chip[data-category="' + categoryParam + '"]');
+            if (matchingChip) {
+                filterChips.forEach(c => c.classList.remove('active'));
+                matchingChip.classList.add('active');
+                activeCategory = categoryParam;
+            }
+        }
+        if (qParam) {
+            searchInput.value = qParam;
+            searchQuery = qParam.toLowerCase();
+        }
+        applyFilters();
+    </script>
+</body>
+</html>
